@@ -16,7 +16,7 @@
   <!-- External -->
   <project path="external/json-c" name="external_json-c" revision="lineage/lineage-18.0" remote="githubgl" />
 
-  <!-- Beginning of added projects from Lineage of Qualcomm (CAF) -->
+  <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage/lineage-18.0" remote="githubgl" />
   <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="lineage-18.0-legacy-um" remote="githubgl"  />
