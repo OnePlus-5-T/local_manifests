@@ -41,9 +41,9 @@
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-18.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" revision="gl/lineage-18.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="gl/lineage-18.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="lineage-18.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="gl/lineage-18.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-18.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-18.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-17.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-18.0" remote="githubgl" />
 
 </manifest>
