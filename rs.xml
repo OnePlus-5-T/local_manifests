@@ -5,7 +5,7 @@
            fetch="https://github.com/robertoglxda"
            revision="refs/heads/gl" />
 
-  <!-- Validated with AOSP revision: android-11.0.0_r17 -->
+  <!-- Validated with AOSP revision: android-11.0.0_r21 -->
   <!-- Added projects for Cheeseburger -->
   <project path="device/oneplus/cheeseburger" name="device_oneplus_cheeseburger" revision="gl/lineage/op8998-eleven" remote="githubgl" />
   <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage/op8998-eleven" remote="githubgl" />
