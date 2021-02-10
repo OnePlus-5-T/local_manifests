@@ -10,7 +10,7 @@
   <project path="device/oneplus/cheeseburger" name="device_oneplus_cheeseburger" revision="gl/lineage-18.1" remote="githubgl" />
   <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage-18.1" remote="githubgl" />
   <project path="kernel/oneplus/msm8998" name="kernel_oneplus_msm8998" revision="gl/lineage/op8998-eleven" remote="githubgl" />
-  <project path="vendor/oneplus" name="vendor_oneplus" revision="lineage-18.1" remote="githubgl" />
+  <project path="vendor/oneplus" name="vendor_oneplus" revision="gl/lineage-18.1" remote="githubgl" />
   <project path="vendor/rs" name="vendor_rs" revision="gl" remote="githubgl" />
 
   <!-- External -->
