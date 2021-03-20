@@ -7,6 +7,9 @@ All the changes are provided in separate repositories: this allows to upgrade An
 
 Most of the added repositories is provided by LineageOS or CAF, so thanks to them for those repos.
 
+The kernel is based on Lazy Kernel:
+https://github.com/ederekun/lazy_kernel_op5-t/tree/custom-develop
+
 # Build instructions
 Follow the instructions from Google to setup a machine to build Android 11:
 https://source.android.com/setup/build/initializing
