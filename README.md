@@ -7,7 +7,7 @@ All the changes are provided in separate repositories: this allows to upgrade An
 
 Most of the added repositories is provided by LineageOS or CAF, so thanks to them for those repos.
 
-The kernel is based on Lazy Kernel:
+The ROM supports Lazy kernel (see 'gl/lazy/custom-develop' branch on the kernel repo). Original Lazy Kernel sources:
 https://github.com/ederekun/lazy_kernel_op5-t/tree/custom-develop
 
 # Build instructions
