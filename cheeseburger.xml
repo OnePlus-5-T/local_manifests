@@ -12,7 +12,7 @@
 <project path="device/oneplus/msm8998-platform"  name="4.14-device-oneplus-msm8998-platform" remote="githubgl" revision="cheeseburger" />
 
 <project path="kernel/sony/msm-4.14/common-headers" name="device-sony-common-headers" remote="sony" revision="aosp/LA.UM.7.1.r1" />
-<project path="kernel/sony/msm-4.14/kernel" name="kernel_4.14_oneplus_msm8998" remote="githubgl" revision="backup" />
+<project path="kernel/sony/msm-4.14/kernel" name="kernel_4.14_oneplus_msm8998" remote="githubgl" revision="cheeseburger" />
 
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="githubgl" revision="cheeseburger" />
 
