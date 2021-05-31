@@ -6,6 +6,17 @@
 	             fetch="https://github.com/robertosartori"
 	             revision="refs/heads/gl" />
 
-<project path="kernel/sony/msm-4.14/common-headers" name="device-sony-common-headers" groups="device" remote="sony" revision="aosp/LA.UM.7.1.r1" />
-<project path="kernel/sony/msm-4.14/kernel" name="kernel_4.14_oneplus_msm8998" groups="device" remote="githubgl" revision="backup" />
+
+<project path="device/oneplus/cheeseburger"  name="4.14-device-oneplus-cheeseburger" remote="githubgl" revision="cheeseburger" />
+<project path="device/oneplus/msm8998-common"  name="4.14-device-oneplus-msm8998-common" remote="githubgl" revision="cheeseburger" />
+<project path="device/oneplus/msm8998-platform"  name="4.14-device-oneplus-msm8998-platform" remote="githubgl" revision="cheeseburger" />
+
+<project path="kernel/sony/msm-4.14/common-headers" name="device-sony-common-headers" remote="sony" revision="aosp/LA.UM.7.1.r1" />
+<project path="kernel/sony/msm-4.14/kernel" name="kernel_4.14_oneplus_msm8998" remote="githubgl" revision="backup" />
+
+<project path="vendor/oss/fingerprint"  name="vendor-sony-oss-fingerprint" remote="githubgl" revision="cheeseburger" />
+<project path="vendor/qcom/opensource/camera" name="vendor-qcom-opensource-camera" remote="githubgl" revision="cheeseburger" />
+<project path="vendor/qcom/opensource/media/sm8150" name="vendor-qcom-opensource-media-sm8150" remote="githubgl" revision="cheeseburger" />
+<project path="vendor/qcom/opensource/display" name="vendor-qcom-opensource-display" remote="githubgl" revision="cheeseburger" />
+
 </manifest>
