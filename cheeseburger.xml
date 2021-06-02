@@ -20,4 +20,6 @@
 <project path="vendor/qcom/opensource/media/sm8150" name="vendor-qcom-opensource-media-sm8150" remote="githubgl" revision="cheeseburger" />
 <project path="vendor/qcom/opensource/display" name="vendor-qcom-opensource-display" remote="githubgl" revision="cheeseburger" />
 
+<project path="vendor/oneplus" name="4.14-vendor-oneplus" remote="githubgl" revision="cheeseburger" />
+
 </manifest>
