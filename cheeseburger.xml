@@ -16,7 +16,6 @@
 
 <project path="device/sony/sepolicy" name="device-sony-sepolicy" groups="device" remote="githubgl" revision="cheeseburger" />
 
-<project path="vendor/oss/fingerprint"  name="vendor-sony-oss-fingerprint" remote="githubgl" revision="cheeseburger" />
 <project path="vendor/qcom/opensource/camera" name="vendor-qcom-opensource-camera" remote="githubgl" revision="cheeseburger" />
 <project path="vendor/qcom/opensource/media/sm8150" name="vendor-qcom-opensource-media-sm8150" remote="githubgl" revision="cheeseburger" />
 <project path="vendor/qcom/opensource/display" name="vendor-qcom-opensource-display" remote="githubgl" revision="cheeseburger" />
