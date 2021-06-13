@@ -56,3 +56,9 @@ Note that not all the fastboot versions support the 'format' command.
 
 The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or using third party recoveries like TWRP.
 
+# Exceptions
+
+These patches are needed to boot Android.
+They are not merged by Google yet, but they are in the AOSP master branch or in the Google's gerrit, so hopefully they will be merged soon:
+
+- frameworks/av: https://android-review.googlesource.com/c/platform/frameworks/av/+/1736193
