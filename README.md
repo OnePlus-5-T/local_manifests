@@ -16,7 +16,7 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r37
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r38
 $ cd .repo
 $ git clone https://github.com/robertoglandroid/local_manifests.git local_manifests
 $ cd ..
