@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="githubgl"
-           fetch="https://github.com/robertoglandroid"
+           fetch="https://github.com/roberto-sartori-gl"
            revision="refs/heads/gl" />
 
   <remote  name="githubmuppets"
