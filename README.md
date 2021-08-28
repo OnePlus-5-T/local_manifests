@@ -15,7 +15,7 @@ Then, sync all the sources:
 ```
 $ repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r37
 $ cd .repo
-$ git clone https://github.com/robertoglxda/local_manifests.git local_manifests
+$ git clone https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd local_manifests
 $ git checkout kernel4.14
 $ cd ../..

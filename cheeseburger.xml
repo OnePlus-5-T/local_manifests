@@ -3,7 +3,7 @@
 <remote name="sony" fetch="https://github.com/sonyxperiadev/" />
 
   <remote  name="githubgl"
-	             fetch="https://github.com/robertosartori"
+	             fetch="https://github.com/roberto-sartori-gl"
 	             revision="refs/heads/gl" />
 
 
