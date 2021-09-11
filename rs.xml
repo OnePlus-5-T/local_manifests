@@ -22,7 +22,7 @@
   <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-18.1" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="lineage-18.1-legacy-um" remote="githubgl"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="gl/lineage-18.1-legacy-um" remote="githubgl"  />
 
   <!-- Hardware -->
   <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" revision="lineage-18.1-caf" remote="githubgl" />
