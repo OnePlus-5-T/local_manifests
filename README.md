@@ -7,18 +7,15 @@ All the changes are provided in separate repositories: this allows to upgrade An
 
 Most of the added repositories is provided by LineageOS or CAF, so thanks to them for those repos.
 
-The ROM supports Lazy kernel (see 'gl/lazy/custom-develop' branch on the kernel repo). Original Lazy Kernel sources:
-https://github.com/ederekun/lazy_kernel_op5-t/tree/custom-develop
-
 # Build instructions
-Follow the instructions from Google to setup a machine to build Android 11:
+Follow the instructions from Google to setup a machine to build Android from AOSP Master branch:
 https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-11.0.0_r43
+$ repo init -u https://android.googlesource.com/platform/manifest -b master
 $ cd .repo
-$ git clone https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
+$ git clone --branch master/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
 $ repo sync -c --no-clone-bundle --no-tags
 ```
