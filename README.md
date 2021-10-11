@@ -1,6 +1,6 @@
 # Project
 
-This projects aims to create an upgradable AOSP build system for the Oneplus 5 (Cheeseburger).
+This projects aims to create an upgradable AOSP build system for the OnePlus 5 (Cheeseburger) and the OnePlus 5T (Dumpling).
 No repository from AOSP is changed: no commit over AOSP is at the moment present on these sources.
 
 All the changes are provided in separate repositories: this allows to upgrade Android with minimal effort, potentially also for future major versions.
@@ -52,3 +52,5 @@ $ fastboot format userdata
 Note that not all the fastboot versions support the 'format' command.
 
 The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or using third party recoveries like TWRP.
+
+To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands an paths.
