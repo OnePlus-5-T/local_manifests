@@ -1,11 +1,13 @@
 # Project
 
-This projects aims to create an upgradable AOSP build system for the OnePlus 5 (Cheeseburger) and the OnePlus 5T (Dumpling).
+This projects aims to create an upgradable AOSP build system for the OnePlus 5 (Cheeseburger) and the OnePlus 5T (Dumpling) using kernel 4.14.
 No repository from AOSP is changed: no commit over AOSP is at the moment present on these sources.
 
 All the changes are provided in separate repositories: this allows to upgrade Android with minimal effort, potentially also for future major versions.
 
-Most of the added repositories is provided by LineageOS or CAF, so thanks to them for those repos.
+Most of the added repositories is provided by LineageOS, CAF and Sony, so thanks to them for those repos.
+A special thanks for Sony:
+https://github.com/sonyxperiadev
 
 # Build instructions
 Follow the instructions from Google to setup a machine to build Android 12:
@@ -13,9 +15,9 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r2
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-12.0.0_r13
 $ cd .repo
-$ git clone --branch a12/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
+$ git clone --branch 4.14/a12/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
 $ repo sync -c --no-clone-bundle --no-tags
 ```
