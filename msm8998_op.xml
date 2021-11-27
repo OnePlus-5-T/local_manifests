@@ -25,7 +25,7 @@
 
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-18.1" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="4.14/device_qcom_sepolicy" revision="4.14/a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
 
   <!-- Kernel headers from Sony -->
   <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="aosp/LA.UM.7.1.r1" remote="githubgl" />
@@ -64,4 +64,6 @@
   <!-- Tools -->
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-18.1" remote="githubgl" />
 
+  <!-- Open Source projects -->
+  <project path="vendor/oss/timekeep" name ="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
 </manifest>
