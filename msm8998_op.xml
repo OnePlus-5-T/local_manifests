@@ -28,9 +28,9 @@
   <project path="device/qcom/sepolicy-legacy-um" name="4.14/device_qcom_sepolicy" revision="4.14/a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
 
   <!-- Kernel headers from Sony -->
-  <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="aosp/LA.UM.7.1.r1" remote="githubgl" />
+  <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="msm8998_op/aosp/LA.UM.7.1.r1" remote="githubgl" />
 
-  <project path="kernel/sony/4.14/common-headers" name="4.14-qti-headers" revision="master" remote="githubgl" />
+  <project path="kernel/sony/4.14/common-headers" name="4.14-qti-headers" revision="msm8998_op/master" remote="githubgl" />
 
   <!-- Custom HAL from Sony/CAF -->
   <remove-project name="platform/hardware/qcom/wlan" />
@@ -43,7 +43,7 @@
 
   <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
 
-  <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="r-mr1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="githubgl" />
 
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-18.1" remote="githubgl" />
 
