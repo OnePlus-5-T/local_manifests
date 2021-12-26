@@ -25,7 +25,7 @@
 
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-18.1" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="4.14/device_qcom_sepolicy" revision="4.14/a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="4.14/a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
 
   <!-- Kernel headers from Sony -->
   <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="msm8998_op/aosp/LA.UM.7.1.r1" remote="githubgl" />
