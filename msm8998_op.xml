@@ -66,4 +66,7 @@
 
   <!-- Open Source projects -->
   <project path="vendor/oss/timekeep" name ="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
+
+  <!-- Google projects -->
+  <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 </manifest>
