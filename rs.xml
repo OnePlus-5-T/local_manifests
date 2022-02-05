@@ -55,4 +55,6 @@
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-18.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-18.1" remote="githubgl" />
 
+  <remove-project name="device/linaro/dragonboard" />
+  <remove-project name="device/linaro/dragonboard-kernel" />
 </manifest>
