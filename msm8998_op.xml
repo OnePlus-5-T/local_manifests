@@ -8,7 +8,7 @@
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
-   <!-- Validated with AOSP revision: android-12.0.0_r21 -->
+   <!-- Validated with AOSP revision: android-12.0.0_r29 -->
 
   <!-- Added projects for Cheeseburger and dumpling -->
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/a12/gl/lineage-18.1" remote="githubgl" />
@@ -45,7 +45,7 @@
 
   <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="githubgl" />
 
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-18.1" remote="githubgl" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="yaap/twelve" remote="githubgl" />
 
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-18.1" remote="githubgl" />
 
