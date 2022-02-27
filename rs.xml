@@ -14,7 +14,7 @@
   <project path="device/oneplus/dumpling" name="device_oneplus_dumpling" revision="gl/lineage-19.0" remote="githubgl" />
   <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage-19.0" remote="githubgl" />
   <project path="kernel/oneplus/msm8998" name="kernel_oneplus_msm8998" revision="gl/lineage-19.0" remote="githubgl" />
-  <project path="vendor/oneplus" name="vendor_oneplus" revision="6a5b5a8eb33868725a9c7c548d04514c32d19efa" remote="githubgl" />
+  <project path="vendor/oneplus" name="vendor_oneplus" revision="88d0db6a18fddbd6e4ff6c91c3ea7b0376591824" remote="githubgl" />
   <project path="vendor/rs" name="vendor_rs" revision="a12/gl" remote="githubgl" />
 
   <!-- External -->
