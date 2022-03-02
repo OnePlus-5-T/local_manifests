@@ -11,9 +11,9 @@
    <!-- Validated with AOSP revision: android-12.0.0_r29 -->
 
   <!-- Added projects for Cheeseburger and dumpling -->
-  <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/a12/gl/lineage-18.1" remote="githubgl" />
-  <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="4.14/a12/gl/lineage-18.1" remote="githubgl" />
-  <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="msm8998_op/a12/gl/lineage-18.1" remote="githubgl" />
+  <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/gl/lineage-19.0" remote="githubgl" />
+  <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="4.14/gl/lineage-19.0" remote="githubgl" />
+  <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="4.14/gl/lineage-19.0" remote="githubgl" />
   <project path="vendor/oneplus" name="4.14-vendor-oneplus" revision="4.14" remote="githubgl" />
   <project path="vendor/rs" name="4.14-vendor_rs" revision="4.14/a12/gl" remote="githubgl" />
 
@@ -21,11 +21,11 @@
   <project path="kernel/oneplus/prebuilt" name="4.14-kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
 
   <!-- External -->
-  <project path="external/json-c" name="external_json-c" revision="lineage-18.1" remote="githubgl" />
+  <project path="external/json-c" name="external_json-c" revision="lineage-19.0" remote="githubgl" />
 
   <!-- Sepolicy -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-18.1" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="4.14/a12/gl/lineage-18.1-legacy-um" remote="githubgl"  />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-19.0" remote="githubgl" />
+  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="4.14/gl/lineage-19.0-legacy-um" remote="githubgl"  />
 
   <!-- Kernel headers from Sony -->
   <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="msm8998_op/aosp/LA.UM.7.1.r1" remote="githubgl" />
@@ -34,7 +34,7 @@
 
   <!-- Custom HAL from Sony/CAF -->
   <remove-project name="platform/hardware/qcom/wlan" />
-  <project path="hardware/qcom/wlan" name="4.14-hardware_qcom-caf_wlan" revision="msm8998_op/a12/gl/lineage-18.1-caf" remote="githubgl" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom-caf_wlan" revision="lineage-19.0-caf" remote="githubgl" />
 
   <remove-project name="platform/hardware/qcom/media" />
   <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="aosp/LA.UM.8.2.1.r1" remote="githubgl" />
@@ -43,26 +43,28 @@
 
   <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
 
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="4.14-vendor-qcom-opensource-data-ipa-cfg-mgr" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
+
   <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="githubgl" />
 
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="yaap/twelve" remote="githubgl" />
 
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-18.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-19.0" remote="githubgl" />
 
   <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
 
   <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
 
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-18.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-19.0" remote="githubgl" />
 
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-18.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-19.0" remote="githubgl" />
 
   <project path="vendor/qcom/opensource/vibrator" name="4.14-vendor-qcom-opensource-vibrator" revision="aosp/LA.UM.7.1.r1" remote="githubgl" />
 
   <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="githubgl" />
 
   <!-- Tools -->
-  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-18.1" remote="githubgl" />
+  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.0" remote="githubgl" />
 
   <!-- Open Source projects -->
   <project path="vendor/oss/timekeep" name ="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
