@@ -54,3 +54,40 @@ Note that not all the fastboot versions support the 'format' command.
 The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or using third party recoveries like TWRP.
 
 To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands an paths.
+
+# Build the kernel
+The ROM sources include a prebuilt kernel. To build a kernel from sources and update it in the Android sources, follow these instructions.
+
+Download the sources and the cross compilers (needed only the first time):
+```
+$ cd ~
+$ mkdir kernel_build
+$ cd kernel_build
+$ git clone https://github.com/roberto-sartori-gl/kernel_oneplus_msm8998.git kernel_oneplus_msm8998
+$ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/ prebuilt_aarch64
+$ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ prebuilt_arm
+$ git clone --depth 1 -b android-12.1.0_r4 --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilt_clang
+$ git clone --depth 1 -b android-12.1.0_r4 --single-branch  https://android.googlesource.com/platform/prebuilts/build-tools prebuilt_tools
+
+$ cd ~/kernel_build/kernel_oneplus_msm8998
+$ git checkout gl/lineage-19.0
+```
+
+Build the kernel:
+```
+$ cd ~/kernel_build/kernel_oneplus_msm8998
+$ git pull
+$ CC_ARM32_PATH=~/kernel_build/prebuit_arm/bin
+$ CC_ARCH64_PATH=~/kernel_build/prebuilt_aarch64/bin
+$ CC_CLANG_PATH=~/kernel_build/prebuilt_clang/clang-r416183b1/bin
+$ MAKE_PATH=~/kernel_build/prebuilt_tools/linux-x86/bin
+
+$ ${MAKE_PATH}/make -j8 ARCH=arm64 CROSS_COMPILE_ARM32=arm-linux-androidkernel- CROSS_COMPILE=aarch64-linux-android- CC=clang CLANG_TRIPLE=aarch64-linux- PATH="${CC_ARM32_PATH}:${CC_ARCH64_PATH}:${CC_CLANG_PATH}:${PATH}" O=out lineage_oneplus5_defconfig
+$ ${MAKE_PATH}/make -j8 ARCH=arm64 CROSS_COMPILE_ARM32=arm-linux-androidkernel- CROSS_COMPILE=aarch64-linux-android- CC=clang CLANG_TRIPLE=aarch64-linux- PATH="${CC_ARM32_PATH}:${CC_ARCH64_PATH}:${CC_CLANG_PATH}:${PATH}" O=out
+```
+Copy the Image.gz-dtb file from the prebuilt directory to the Android build system:
+```
+$ cp ~/kernel_oneplus_msm8998/out/arch/arm64/boot/Image.gz-dtb ~/aosp_build_system/kernel/oneplus/prebuilt/Image.gz-dtb
+```
+
+Build Android again to update the kernel.
