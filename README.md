@@ -13,7 +13,7 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.0_r4
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-12.1.0_r5
 $ cd .repo
 $ git clone --branch a12/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
