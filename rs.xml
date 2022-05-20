@@ -39,6 +39,7 @@
   <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" revision="gl/lineage-19.1-caf-msm8998" remote="githubgl" />
   <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" revision="gl/lineage-19.1-caf-msm8998" remote="githubgl" />
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" revision="lineage-19.1-caf-msm8998" remote="githubgl" />
+  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-19.1" remote="githubgl" />
 
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.1" remote="githubgl" />
 
