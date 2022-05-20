@@ -91,3 +91,11 @@ $ cp ~/kernel_build/kernel_oneplus_msm8998/out/arch/arm64/boot/Image.gz-dtb ~/ao
 ```
 
 Build Android again to update the kernel.
+
+# Extra patches
+Some patches are needed over AOSP to fix specific issues.
+At the moment, 2 patches are needed:
+1) To avoid crashes with some Gapps versions: https://github.com/crdroidandroid/android_external_setupcompat/commit/0450c92cbe5c75cc31d4cdc0958918836b28ca53
+2) To fix issues with SIM 2: https://github.com/crdroidandroid/android_frameworks_opt_telephony/commit/cbded5de818d1d23ea8ac7a67f178a95da64a9f0
+
+These patches are not necessary to boot or use Android.
