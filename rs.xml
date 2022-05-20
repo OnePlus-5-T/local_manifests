@@ -32,7 +32,7 @@
   <!-- This is an hack to circumvent some security policies from Google: put the wlan hal from Qualcomm in hardware/qcom/wlan -->
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan" name="hardware_qcom-caf_wlan" revision="gl/lineage-19.1-caf" remote="githubgl" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" revision="gl/lineage-19.1" remote="githubgl" >
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" revision="lineage-19.1" remote="githubgl" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
   </project>
@@ -45,7 +45,7 @@
 
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-19.1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" revision="gl/lineage-19.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" revision="lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="gl/lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="gl/lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-19.1" remote="githubgl" />
