@@ -70,7 +70,7 @@ $ git clone --depth 1 -b android-12.1.0_r4 --single-branch https://android.googl
 $ git clone --depth 1 -b android-12.1.0_r4 --single-branch  https://android.googlesource.com/platform/prebuilts/build-tools prebuilt_tools
 
 $ cd ~/kernel_build/kernel_oneplus_msm8998
-$ git checkout gl/lineage-19.0
+$ git checkout gl/lineage-19.1
 ```
 
 Build the kernel:
@@ -87,7 +87,7 @@ $ ${MAKE_PATH}/make -j8 ARCH=arm64 CROSS_COMPILE_ARM32=arm-linux-androidkernel- 
 ```
 Copy the Image.gz-dtb file from the prebuilt directory to the Android build system:
 ```
-$ cp ~/kernel_oneplus_msm8998/out/arch/arm64/boot/Image.gz-dtb ~/aosp_build_system/kernel/oneplus/prebuilt/Image.gz-dtb
+$ cp ~/kernel_build/kernel_oneplus_msm8998/out/arch/arm64/boot/Image.gz-dtb ~/aosp_build_system/kernel/oneplus/prebuilt/Image.gz-dtb
 ```
 
 Build Android again to update the kernel.
