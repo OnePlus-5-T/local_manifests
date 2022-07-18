@@ -50,7 +50,7 @@
   <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="gl/lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-19.1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="lineage-19.1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="githubgl" />
 
   <!-- Google projects -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
