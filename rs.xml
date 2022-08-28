@@ -18,7 +18,7 @@
   <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage-19.1" remote="githubgl" />
     <!-- Prebuilt kernel repo -->
   <project path="kernel/oneplus/prebuilt" name="kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
-  <project path="vendor/oneplus" name="roberto-sartori-gl/vendor-oneplus" revision="8bed754d56fe720495f19b2270a3102cc707fca8" remote="githubglssh" />
+  <project path="vendor/oneplus" name="proprietary_vendor_oneplus" revision="40aab85e02588926bfd7a7a163666e48a9687358" remote="githubmuppets" />
   <project path="vendor/rs" name="vendor_rs" revision="a13/gl" remote="githubgl" />
 
   <!-- External -->
