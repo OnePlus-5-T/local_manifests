@@ -53,7 +53,7 @@ Note that not all the fastboot versions support the 'format' command.
 
 The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or using third party recoveries like TWRP.
 
-To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands an paths.
+To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands and paths.
 
 # Build the kernel
 The ROM sources include a prebuilt kernel. To build a kernel from sources and update it in the Android sources, follow these instructions.
