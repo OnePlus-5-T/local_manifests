@@ -103,5 +103,7 @@ https://github.com/crdroidandroid/android_frameworks_opt_telephony/commit/cbded5
 https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a72791347d9f39d85ff412e58f
 https://github.com/LineageOS/android_packages_apps_ThemePicker/commit/14584d051eb8959e8bfb3b29173a0c40b9e991c5
 https://review.lineageos.org/c/LineageOS/android_packages_apps_ThemePicker/+/336690
+4) To fix a Dialer crash when opening Settings -> Display options:
+https://github.com/RiceDroid/android_packages_apps_Dialer/commit/8c4ab1faf4d534d32f570c4bf9cf002ab3ad20d0
 
 These patches are not necessary to boot or use Android.
