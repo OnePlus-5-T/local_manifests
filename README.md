@@ -67,7 +67,7 @@ $ git clone --single-branch --branch gl/lineage-20 https://github.com/roberto-sa
 $ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/ prebuilt_aarch64
 $ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ prebuilt_arm
 $ git clone --depth 1 -b android-13.0.0_r6 --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilt_clang
-$ git clone --depth 1 -b android-12.1.0_r4 --single-branch  https://android.googlesource.com/platform/prebuilts/build-tools prebuilt_tools
+$ git clone --depth 1 -b android-13.0.0_r6 --single-branch https://android.googlesource.com/platform/prebuilts/build-tools prebuilt_tools
 ```
 
 Build the kernel:
