@@ -44,8 +44,6 @@
   <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" revision="lineage-19.1-caf-msm8998" remote="githubgl" />
   <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-19.1" remote="githubgl" />
 
-  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.1" remote="githubgl" />
-
   <!-- Vendor -->
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-19.1" remote="githubgl" />
   <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" revision="lineage-19.1" remote="githubgl" />
