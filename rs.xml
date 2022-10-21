@@ -20,7 +20,7 @@
   <project path="kernel/oneplus/prebuilt" name="kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
   <project path="vendor/oneplus/cheeseburger" name="proprietary_vendor_oneplus_cheeseburger" revision="955fe62ab5dc028144e769654ff7899d6192d1bc" remote="githubmuppets" />
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="fcfb11f702b0a37c2bded3c31a48184d8f024621" remote="githubmuppets" />
-  <project path="vendor/oneplus/msm8998-common" name="proprietary_vendor_oneplus_msm8998-common" revision="77525d94b423f2ec72d3469ddac0a72810f39403" remote="githubmuppets" />
+  <project path="vendor/oneplus/msm8998-common" name="proprietary_vendor_oneplus_msm8998-common" revision="84c2932fa988d179605141178d1149c92a6ca739" remote="githubmuppets" />
   <project path="vendor/rs" name="vendor_rs" revision="a13/gl" remote="githubgl" />
 
   <!-- External -->
