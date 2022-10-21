@@ -25,6 +25,7 @@
 
   <!-- External -->
   <project path="external/json-c" name="external_json-c" revision="lineage-20.0" remote="githubgl" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl"  revision="lineage-20.0" remote="githubgl" />
 
   <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
