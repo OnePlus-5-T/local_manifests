@@ -27,6 +27,9 @@
   <project path="external/json-c" name="external_json-c" revision="lineage-20.0" remote="githubgl" />
   <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl"  revision="lineage-20.0" remote="githubgl" />
 
+  <!-- Packages -->
+  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" revision="lineage-20.0" remote="githubgl" />
+
   <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-20.0" remote="githubgl" />
