@@ -41,7 +41,7 @@
   <!-- This is an hack to circumvent some security policies from Google: put the wlan hal from Qualcomm in hardware/qcom/wlan -->
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan" name="hardware_qcom-caf_wlan" revision="lineage-20.0-caf" remote="githubgl" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" revision="lineage-20.0" remote="githubgl" >
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" revision="gl/lineage-20.0" remote="githubgl" >
     <!-- Add guard for AOSP hardware/qcom directory. -->
     <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
   </project>
