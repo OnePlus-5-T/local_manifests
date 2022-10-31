@@ -13,8 +13,6 @@
     <remove-project name="device/google/coral" />
     <remove-project name="device/google/coral-kernel" />
     <remove-project name="device/google/coral-sepolicy" />
-    <remove-project name="device/google/cuttlefish" />
-    <remove-project name="device/google/cuttlefish_prebuilts" />
     <remove-project name="device/google/redbull" />
     <remove-project name="device/google/redbull-kernel" />
     <remove-project name="device/google/redbull-sepolicy" />
@@ -43,8 +41,6 @@
     <remove-project name="kernel/prebuilts/mainline/arm64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.10/arm64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.10/x86-64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" />
     <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" />
