@@ -13,7 +13,7 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r13
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r16
 $ cd .repo
 $ git clone --branch a13/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
@@ -99,7 +99,6 @@ https://github.com/crdroidandroid/android_frameworks_opt_telephony/commit/cbded5
 3) To enable the styles and colors selection under Settings -> Wallpaper & style:
 https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a72791347d9f39d85ff412e58f
 https://github.com/LineageOS/android_packages_apps_ThemePicker/commit/14584d051eb8959e8bfb3b29173a0c40b9e991c5
-https://review.lineageos.org/c/LineageOS/android_packages_apps_ThemePicker/+/336690
 4) To fix a Dialer crash when opening Settings -> Display options:
 https://github.com/RiceDroid/android_packages_apps_Dialer/commit/8c4ab1faf4d534d32f570c4bf9cf002ab3ad20d0
 5) Fix offline charging 'always on display' issue:
