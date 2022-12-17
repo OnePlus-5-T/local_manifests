@@ -33,7 +33,7 @@ $ source build/envsetup.sh
 $ lunch aosp_cheeseburger-user
 $ make -j12
 $ make otatools-package -j12
-$ make otapackage_norecovery -j12
+$ make otapackage_custom -j12
 ```
 and the OTA zip will be available in `out/target/product/cheeseburger`.
 
