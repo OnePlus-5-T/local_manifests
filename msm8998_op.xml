@@ -5,6 +5,9 @@
            fetch="https://github.com/roberto-sartori-gl"
            revision="refs/heads/gl" />
 
+  <remote  name="githubglssh"
+           fetch="ssh://git@github.com/roberto-sartori-gl" />
+
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
@@ -14,7 +17,7 @@
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/gl/lineage-19.0" remote="githubgl" />
   <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="4.14/gl/lineage-19.0" remote="githubgl" />
   <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="4.14/gl/lineage-19.0" remote="githubgl" />
-  <project path="vendor/oneplus" name="4.14-vendor-oneplus" revision="4.14" remote="githubgl" />
+  <project path="vendor/oneplus" name="4.14-vendor-oneplus" revision="4.14" remote="githubglssh" />
   <project path="vendor/rs" name="4.14-vendor_rs" revision="4.14/a12/gl" remote="githubgl" />
 
   <!-- Prebuilt kernel repo -->
