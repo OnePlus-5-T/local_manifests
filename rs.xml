@@ -13,15 +13,16 @@
 
   <!-- Validated with AOSP revision: android-13.0.0_r41 -->
   <!-- Added projects for Cheeseburger -->
-  <project path="device/oneplus/cheeseburger" name="device_oneplus_cheeseburger" revision="gl/lineage-20" remote="githubgl" />
-  <project path="device/oneplus/dumpling" name="device_oneplus_dumpling" revision="gl/lineage-20" remote="githubgl" />
-  <project path="device/oneplus/msm8998-common" name="device_oneplus_msm8998_common" revision="gl/lineage-20" remote="githubgl" />
-    <!-- Prebuilt kernel repo -->
-  <project path="kernel/oneplus/prebuilt" name="kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
+  <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/gl/lineage-20" remote="githubgl" />
+  <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="4.14/gl/lineage-20" remote="githubgl" />
+  <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="4.14/gl/lineage-20" remote="githubgl" />
   <project path="vendor/oneplus/cheeseburger" name="proprietary_vendor_oneplus_cheeseburger" revision="070d217b2544fdec3773c82e1d537a366e1b1673" remote="githubmuppets" />
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="645b844b9db46656b9ae8ef32318a78c2569a597" remote="githubmuppets" />
-  <project path="vendor/oneplus/msm8998-common" name="proprietary_vendor_oneplus_msm8998-common" revision="960ddcb88f7194fe6bc26509dbfec9a52043d12b" remote="githubmuppets" />
-  <project path="vendor/rs" name="vendor_rs" revision="a13/gl" remote="githubgl" />
+  <project path="vendor/oneplus/msm8998-common" name="4.14-vendor_oneplus_msm8998-common" revision="4.14/960ddcb88f7194fe6bc26509dbfec9a52043d12b" remote="githubmuppets" />
+  <project path="vendor/rs" name="4.14-vendor_rs" revision="4.14/a13/gl" remote="githubgl" />
+
+    <!-- Prebuilt kernel repo -->
+  <project path="kernel/oneplus/prebuilt" name="4.14-kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
 
   <!-- External -->
   <project path="external/json-c" name="external_json-c" revision="lineage-20.0" remote="githubgl" />
@@ -30,31 +31,39 @@
   <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-20.0" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy" revision="gl/lineage-20.0-legacy-um" remote="githubgl"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="4.14/gl/lineage-20.0-legacy-um" remote="githubgl"  />
 
-  <!-- Hardware -->
-  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" revision="lineage-20.0-caf" remote="githubgl" />
+ <!-- Kernel headers from Sony -->
+  <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="msm8998_op/aosp/LA.UM.7.1.r1" remote="githubgl" />
+
+  <project path="kernel/sony/4.14/common-headers" name="4.14-qti-headers" revision="msm8998_op/master" remote="githubgl" />
+
+  <!-- Custom HAL from Sony/CAF -->
+  <remove-project name="platform/hardware/qcom/media" />
+  <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="aosp/LA.UM.8.2.1.r1" remote="githubgl" />
+  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-20.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="4-14-vendor-qcom-opensource-audio-hal-primary-hal" revision="msm8998_op/aosp/LA.UM.9.12.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="4.14-vendor-qcom-opensource-data-ipa-cfg-mgr" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="githubgl" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-20.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-20.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-20.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="githubgl" />
+  <project path="vendor/qcom/opensource/vibrator" name="4.14-vendor-qcom-opensource-vibrator" revision="aosp/LA.UM.7.1.r1" remote="githubgl" />
+  <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="githubgl" />
+
+  <!-- Tools -->
+  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.0" remote="githubgl" />
+
+  <!-- Open Source projects -->
+  <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
 
   <!-- This is an hack to circumvent some security policies from Google: put the wlan hal from Qualcomm in hardware/qcom/wlan/legacy -->
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan/legacy" name="hardware_qcom-caf_wlan" revision="lineage-20.0-caf" remote="githubgl" />
-  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" revision="gl/lineage-20.0" remote="githubgl" >
-    <!-- Add guard for AOSP hardware/qcom directory. -->
-    <linkfile src="os_pickup_aosp.mk" dest="hardware/qcom/Android.mk" />
-  </project>
-  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" revision="gl/lineage-20.0-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" revision="gl/lineage-20.0-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" revision="lineage-20.0-caf-msm8998" remote="githubgl" />
-  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-20.0" remote="githubgl" />
-
-  <!-- Vendor -->
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-20.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" revision="lineage-20.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" revision="gl/lineage-20.0-legacy-um" remote="githubgl" />
-  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" revision="gl/lineage-20.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-20.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-20.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="githubgl" />
 
   <!-- Google projects -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
