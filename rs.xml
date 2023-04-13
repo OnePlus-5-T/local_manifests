@@ -18,7 +18,7 @@
   <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="4.14/gl/lineage-20" remote="githubgl" />
   <project path="vendor/oneplus/cheeseburger" name="proprietary_vendor_oneplus_cheeseburger" revision="070d217b2544fdec3773c82e1d537a366e1b1673" remote="githubmuppets" />
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="645b844b9db46656b9ae8ef32318a78c2569a597" remote="githubmuppets" />
-  <project path="vendor/oneplus/msm8998-common" name="4.14-vendor_oneplus_msm8998-common" revision="4.14/960ddcb88f7194fe6bc26509dbfec9a52043d12b" remote="githubmuppets" />
+  <project path="vendor/oneplus/msm8998-common" name="4.14-vendor_oneplus_msm8998-common" revision="4.14/960ddcb88f7194fe6bc26509dbfec9a52043d12b" remote="githubgl" />
   <project path="vendor/rs" name="4.14-vendor_rs" revision="4.14/a13/gl" remote="githubgl" />
 
     <!-- Prebuilt kernel repo -->
