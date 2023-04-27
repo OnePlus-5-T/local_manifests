@@ -55,6 +55,37 @@ The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or u
 
 To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands and paths.
 
+# Build the kernel
+The ROM sources include a prebuilt kernel. To build a kernel from sources and update it in the Android sources, follow these instructions.
+
+Download the sources and the cross compilers (needed only the first time):
+```
+$ cd ~
+$ mkdir kernel_build
+$ cd kernel_build
+$ git clone --single-branch --branch 4.14.284/msm8998_op_new https://github.com/roberto-sartori-gl/4.14-kernel-oneplus-msm8998 kernel_oneplus_msm8998
+$ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/ prebuilt_aarch64
+$ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ prebuilt_arm
+$ git clone --depth 1 -b android12-dev --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilt_clang
+$ git clone --depth 1 -b android-13.0.0_r0.70 --single-branch https://android.googlesource.com/platform/prebuilts/gas/linux-x86 prebuilt_clang_triple
+$ git clone --depth 1 -b android-13.0.0_r6 --single-branch https://android.googlesource.com/platform/prebuilts/build-tools prebuilt_tools
+```
+
+Build the kernel:
+```
+$ CC_ARM32_PATH=~/kernel_build/prebuilt_arm/bin
+$ CC_ARCH64_PATH=~/kernel_build/prebuilt_aarch64/bin
+$ CLANG_BIN=~/kernel_build/prebuilt_clang/clang-r416183b/bin/clang
+$ CLANG_TRIPLE_BIN=~/kernel_build/prebuilt_clang_triple/aarch64-linux-gnu-
+$ MAKE_PATH=~/kernel_build/prebuilt_tools/linux-x86/bin
+$ DEFCONFIG=msm8998_oneplus_android_defconfig
+
+$ cd ~/kernel_build/kernel_oneplus_msm8998
+$ git pull
+$ ${MAKE_PATH}/make O=out ARCH=arm64 CC=${CLANG_BIN} ${DEFCONFIG} -j8
+$ ${MAKE_PATH}/make O=out ARCH=arm64 CROSS_COMPILE_ARM32=${CC_ARM32_PATH}/arm-linux-androidkernel- CROSS_COMPILE=${CC_ARCH64_PATH}/aarch64-linux-androidkernel- CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 CLANG_TRIPLE=${CLANG_TRIPLE_BIN} -j6
+```
+
 # Extra patches
 Some patches are needed over AOSP to fix specific issues.
 At the moment, 2 patches are needed:
