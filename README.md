@@ -75,9 +75,11 @@ Build the kernel:
 ```
 $ CC_ARM32_PATH=~/kernel_build/prebuilt_arm/bin
 $ CC_ARCH64_PATH=~/kernel_build/prebuilt_aarch64/bin
-$ CLANG_BIN=~/kernel_build/prebuilt_clang/clang-r458507/bin/clang
+$ CLANG_PATH=~/kernel_build/prebuilt_clang/clang-r458507/bin
+$ CLANG_BIN=${CLANG_PATH}/clang
 $ CLANG_TRIPLE_BIN=~/kernel_build/prebuilt_clang_triple/aarch64-linux-gnu-
 $ MAKE_PATH=~/kernel_build/prebuilt_tools/linux-x86/bin
+$ PATH="${PATH}:${CLANG_PATH}"
 $ DEFCONFIG=msm8998_oneplus_android_defconfig
 
 $ cd ~/kernel_build/kernel_oneplus_msm8998
