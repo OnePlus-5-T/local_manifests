@@ -11,7 +11,7 @@
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
-  <!-- Validated with AOSP revision: android-13.0.0_r41 -->
+  <!-- Validated with AOSP revision: android-13.0.0_r52 -->
   <!-- Added projects for Cheeseburger -->
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="4.14/gl/lineage-20" remote="githubgl" />
   <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="4.14/gl/lineage-20" remote="githubgl" />
