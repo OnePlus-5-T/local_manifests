@@ -33,10 +33,8 @@
   <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-20.0" remote="githubgl" />
   <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="4.14/gl/lineage-20.0-legacy-um" remote="githubgl"  />
 
- <!-- Kernel headers from Sony -->
-  <project path="kernel/sony/msm-4.14/common-headers" name="4.14-kernel-sony-msm-4.14-headers" revision="msm8998_op/aosp/LA.UM.7.1.r1" remote="githubgl" />
-
-  <project path="kernel/sony/4.14/common-headers" name="4.14-qti-headers" revision="msm8998_op/master" remote="githubgl" />
+  <!-- HAL from Lineage -->
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" revision="gl/lineage-20.0" remote="githubgl" />
 
   <!-- Custom HAL from Sony/CAF -->
   <remove-project name="platform/hardware/qcom/media" />
@@ -52,11 +50,7 @@
   <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-20.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="githubgl" />
-  <project path="vendor/qcom/opensource/vibrator" name="4.14-vendor-qcom-opensource-vibrator" revision="aosp/LA.UM.7.1.r1" remote="githubgl" />
   <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="githubgl" />
-
-  <!-- Tools -->
-  <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" revision="lineage-19.0" remote="githubgl" />
 
   <!-- Open Source projects -->
   <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
