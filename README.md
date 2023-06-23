@@ -102,5 +102,7 @@ https://github.com/LineageOS/android_packages_apps_ThemePicker/commit/14584d051e
 https://github.com/RiceDroid/android_packages_apps_Dialer/commit/8c4ab1faf4d534d32f570c4bf9cf002ab3ad20d0
 5) Fix offline charging 'always on display' issue:
 https://android-review.googlesource.com/c/platform/bootable/recovery/+/2205736/
+6) Fix vowifi:
+https://github.com/Corvus-Q/android_system_sepolicy/commit/87a78b7eaeb3adfe3131b1762123b07d3ccfb85b
 
 These patches are not necessary to boot or use Android.
