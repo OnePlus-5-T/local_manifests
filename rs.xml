@@ -64,4 +64,7 @@
 
   <!-- SimpleDeviceConfig -->
   <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" revision="12.1" remote="githubgl" />
+
+  <!-- AOSP patches -->
+  <project path="aosp_patches" name="aosp_patches" revision="4.14" remote="githubgl" />
 </manifest>

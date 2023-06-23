@@ -90,7 +90,14 @@ $ ${MAKE_PATH}/make O=out ARCH=arm64 CROSS_COMPILE_ARM32=${CC_ARM32_PATH}/arm-li
 
 # Extra patches
 Some patches are needed over AOSP to fix specific issues.
-At the moment, 2 patches are needed:
+The patches can be applied with the following commands, after the _repo sync_:
+```
+$ cd aosp_patches
+$ ./apply_patch.sh android-13.0.0_r52
+```
+
+The patches currently available:
+
 1) To avoid crashes with some Gapps versions:
 https://github.com/crdroidandroid/android_external_setupcompat/commit/0450c92cbe5c75cc31d4cdc0958918836b28ca53
 2) To fix issues with SIM 2:
@@ -103,5 +110,6 @@ https://github.com/CarbonROM/android_packages_apps_Dialer/commit/e2b6a46f1f477d6
 https://android-review.googlesource.com/c/platform/bootable/recovery/+/2205736/
 6) Fix vowifi:
 https://github.com/Corvus-Q/android_system_sepolicy/commit/87a78b7eaeb3adfe3131b1762123b07d3ccfb85b
+7) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
 
 These patches are not necessary to boot or use Android.
