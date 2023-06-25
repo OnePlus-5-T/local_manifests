@@ -13,9 +13,9 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-13.0.0_r52
+$ repo init -u https://android.googlesource.com/platform/manifest -b master
 $ cd .repo
-$ git clone --branch 4.14/a13/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
+$ git clone --branch a14/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
 $ repo sync -c --no-clone-bundle --no-tags
 ```
@@ -93,7 +93,7 @@ Some patches are needed over AOSP to fix specific issues.
 The patches can be applied with the following commands, after the _repo sync_:
 ```
 $ cd aosp_patches
-$ ./apply_patch.sh android-13.0.0_r52
+$ ./apply_patch.sh master
 ```
 
 The patches currently available:
@@ -106,10 +106,9 @@ https://github.com/crdroidandroid/android_frameworks_opt_telephony/commit/cbded5
 https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a72791347d9f39d85ff412e58f
 4) To fix a Dialer crash when opening Settings -> Display options:
 https://github.com/CarbonROM/android_packages_apps_Dialer/commit/e2b6a46f1f477d68e83210823fef1e4c85cddb3f
-5) Fix offline charging 'always on display' issue:
-https://android-review.googlesource.com/c/platform/bootable/recovery/+/2205736/
-6) Fix vowifi:
-https://github.com/Corvus-Q/android_system_sepolicy/commit/87a78b7eaeb3adfe3131b1762123b07d3ccfb85b
-7) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
+5) Fix vowifi:
+- https://github.com/Corvus-Q/android_system_sepolicy/commit/87a78b7eaeb3adfe3131b1762123b07d3ccfb85b
+- Patch to fix netutils_wrapper access with BPF enabled
+6) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
 
 These patches are not necessary to boot or use Android.
