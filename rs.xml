@@ -38,7 +38,7 @@
 
   <!-- Custom HAL from Sony/CAF -->
   <remove-project name="platform/hardware/qcom/media" />
-  <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="aosp/LA.UM.8.2.1.r1" remote="githubgl" />
+  <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="gl/aosp/LA.UM.8.2.1.r1" remote="githubgl" />
   <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-20.0" remote="githubgl" />
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="4-14-vendor-qcom-opensource-audio-hal-primary-hal" revision="msm8998_op/aosp/LA.UM.9.12.r1" remote="githubgl" />
   <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
