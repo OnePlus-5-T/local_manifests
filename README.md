@@ -88,6 +88,17 @@ $ ${MAKE_PATH}/make O=out ARCH=arm64 CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 ${DEFCONF
 $ ${MAKE_PATH}/make O=out ARCH=arm64 CROSS_COMPILE_ARM32=${CC_ARM32_PATH}/arm-linux-androidkernel- CROSS_COMPILE=${CC_ARCH64_PATH}/aarch64-linux-androidkernel- CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 CLANG_TRIPLE=${CLANG_TRIPLE_BIN} -j6
 ```
 
+Kernel headers can be generated with the following (after configuring the environment with the same variables used to build the kernel) (assuming that the Android build directory is `~/android_build_directory/`):
+```
+$ ${MAKE_PATH}/make headers_install ARCH=arm64 LLVM=1 LLVM_IAS=1 INSTALL_HDR_PATH=~/android_build_directory/vendor/rs/kernel-headers/
+$ cp -r ~/android_build_directory/vendor/rs/kernel-headers/include/* ~/android_build_directory/vendor/rs/kernel-headers/
+$ rm -rf ~/android_build_directory/vendor/rs/kernel-headers/include
+$ rm -rf ~/android_build_directory/vendor/rs/kernel-headers/techpack
+$ cd ~/android_build_directory/vendor/rs/kernel-headers/
+$ find . -name "*.cmd" -type f -delete
+$ cd -
+```
+
 # Extra patches
 Some patches are needed over AOSP to fix specific issues.
 The patches can be applied with the following commands, after the _repo sync_:
