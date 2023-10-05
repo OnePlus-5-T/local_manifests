@@ -55,6 +55,10 @@
   <!-- Open Source projects -->
   <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
 
+  <!-- This is an hack to circumvent some security policies from Google: put the wlan hal from Qualcomm in hardware/qcom/wlan/legacy -->
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="hardware_qcom_wlan" revision="gl/android-14.0.0_r1" remote="githubgl" />
+
   <!-- Google projects -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 
