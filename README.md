@@ -8,12 +8,12 @@ All the changes are provided in separate repositories: this allows to upgrade An
 Most of the added repositories is provided by LineageOS or CAF, so thanks to them for those repos.
 
 # Build instructions
-Follow the instructions from Google to setup a machine to build Android 13:
+Follow the instructions from Google to setup a machine to build Android 14:
 https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b master
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r1
 $ cd .repo
 $ git clone --branch a14/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
@@ -104,7 +104,7 @@ Some patches are needed over AOSP to fix specific issues.
 The patches can be applied with the following commands, after the _repo sync_:
 ```
 $ cd aosp_patches
-$ ./apply_patch.sh master
+$ ./apply_patch.sh android-14.0.0_r1
 ```
 
 The patches currently available:
