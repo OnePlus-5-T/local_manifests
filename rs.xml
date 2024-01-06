@@ -11,7 +11,7 @@
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
-  <!-- Validated with AOSP revision: android-14.0.0_r17 -->
+  <!-- Validated with AOSP revision: android-14.0.0_r20 -->
   <!-- Added projects for Cheeseburger -->
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="gl/lineage-21" remote="githubgl" />
   <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="gl/lineage-21" remote="githubgl" />
@@ -67,7 +67,4 @@
 
   <!-- AOSP patches -->
   <project path="aosp_patches" name="aosp_patches" revision="a14" remote="githubgl" />
-
-  <!-- Google repos -->
-  <project path="external/mockito-kotlin" name="platform/external/mockito-kotlin" revision="main" remote="aosp" />
 </manifest>
