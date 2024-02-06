@@ -13,7 +13,7 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r20
+$ repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r25
 $ cd .repo
 $ git clone --branch a14/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
@@ -104,7 +104,7 @@ Some patches are needed over AOSP to fix specific issues.
 The patches can be applied with the following commands, after the _repo sync_:
 ```
 $ cd aosp_patches
-$ ./apply_patch.sh android-14.0.0_r20
+$ ./apply_patch.sh android-14.0.0_r25
 ```
 
 The patches currently available:
