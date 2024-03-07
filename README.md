@@ -13,7 +13,7 @@ https://source.android.com/setup/build/initializing
 
 Then, sync all the sources:
 ```
-$ repo init -u https://android.googlesource.com/platform/manifest -b android-14.0.0_r25
+$ repo init -u https://android.googlesource.com/platform/manifest -b <AOSP tag>
 $ cd .repo
 $ git clone --branch a14/gl https://github.com/roberto-sartori-gl/local_manifests.git local_manifests
 $ cd ..
@@ -30,7 +30,7 @@ the images will be available in `out/target/product/cheeseburger`.
 To build an OTA:
 ```
 $ source build/envsetup.sh
-$ lunch aosp_cheeseburger-user
+$ lunch aosp_cheeseburger-ap1a-user
 $ make -j12
 $ make otatools-package -j12
 $ make otapackage_custom -j12
@@ -104,7 +104,7 @@ Some patches are needed over AOSP to fix specific issues.
 The patches can be applied with the following commands, after the _repo sync_:
 ```
 $ cd aosp_patches
-$ ./apply_patch.sh android-14.0.0_r25
+$ ./apply_patch.sh <AOSP tag>
 ```
 
 The patches currently available:
