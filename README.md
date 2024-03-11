@@ -22,7 +22,7 @@ $ repo sync -c --no-clone-bundle --no-tags
 then:
 ```
 $ source build/envsetup.sh
-$ lunch aosp_cheeseburger-user
+$ lunch aosp_cheeseburger-ap1a-user
 $ make -j12
 ```
 the images will be available in `out/target/product/cheeseburger`.
