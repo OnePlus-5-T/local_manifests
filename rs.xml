@@ -12,7 +12,7 @@
            fetch="https://github.com/TheMuppets" />
 
   <!-- Validated with AOSP revision: android-14.0.0_r29 -->
-  <!-- Added projects for Cheeseburger -->
+  <!-- Added projects for Cheeseburger and Dumpling -->
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="gl/lineage-21" remote="githubgl" />
   <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="gl/lineage-21" remote="githubgl" />
   <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="gl/lineage-21" remote="githubgl" />
@@ -20,6 +20,7 @@
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="645b844b9db46656b9ae8ef32318a78c2569a597" remote="githubmuppets" />
   <project path="vendor/oneplus/msm8998-common" name="roberto-sartori-gl/4.14-vendor_oneplus_msm8998-common" revision="ff0caef2b29f8a507b91d4cbde7ea7babc0cc1a3" remote="githubglssh" />
   <project path="vendor/rs" name="4.14-vendor_rs" revision="a14/gl" remote="githubgl" />
+  <project path="packages/apps/OpenCamera" name="packages-apps-OpenCamera" revision="main" clone-depth="1" remote="githubgl" />
 
     <!-- Prebuilt kernel repo -->
   <project path="kernel/oneplus/prebuilt" name="4.14-kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
