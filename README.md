@@ -27,12 +27,10 @@ $ make -j12
 ```
 the images will be available in `out/target/product/cheeseburger`.
 
-To build an OTA:
+To build an OTA, from the Android sources root directory:
 ```
-$ source build/envsetup.sh
-$ lunch aosp_cheeseburger-ap1a-user
-$ make -j12
-$ source vendor/rs/ota_build/ota_build.sh
+$ bash vendor/rs/ota_build/ota_build.sh aosp_cheeseburger-ap1a-user
+$ bash vendor/rs/ota_build/ota_build.sh aosp_dumpling-ap1a-user
 ```
 and the OTA zip will be available in `out/target/product/<product>`.
 
