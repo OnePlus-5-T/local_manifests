@@ -32,10 +32,9 @@ To build an OTA:
 $ source build/envsetup.sh
 $ lunch aosp_cheeseburger-ap1a-user
 $ make -j12
-$ make otatools-package -j12
-$ make otapackage_custom -j12
+$ source vendor/rs/ota_build/ota_build.sh
 ```
-and the OTA zip will be available in `out/target/product/cheeseburger`.
+and the OTA zip will be available in `out/target/product/<product>`.
 
 # Flash instructions
 The images can be flashed using fastboot:
