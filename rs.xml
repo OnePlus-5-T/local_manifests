@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote  name="githubgl"
-           fetch="https://github.com/roberto-sartori-gl"
+  <remote  name="github"
+           fetch="https://github.com/oneplus-5-t"
            revision="refs/heads/gl" />
 
-  <remote  name="githubglssh"
+  <remote  name="githubssh"
            fetch="ssh://git@github.com" />
 
   <remote  name="githubmuppets"
@@ -13,55 +13,55 @@
 
   <!-- Validated with AOSP revision: android-14.0.0_r30 -->
   <!-- Added projects for Cheeseburger and Dumpling -->
-  <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="gl/lineage-21" remote="githubgl" />
-  <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="gl/lineage-21" remote="githubgl" />
-  <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="gl/lineage-21" remote="githubgl" />
+  <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="gl/lineage-21" remote="github" />
+  <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="gl/lineage-21" remote="github" />
+  <project path="device/oneplus/msm8998-common" name="4.14-device_oneplus_msm8998_common" revision="gl/lineage-21" remote="github" />
   <project path="vendor/oneplus/cheeseburger" name="proprietary_vendor_oneplus_cheeseburger" revision="070d217b2544fdec3773c82e1d537a366e1b1673" remote="githubmuppets" />
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="645b844b9db46656b9ae8ef32318a78c2569a597" remote="githubmuppets" />
-  <project path="vendor/oneplus/msm8998-common" name="roberto-sartori-gl/4.14-vendor_oneplus_msm8998-common" revision="ff0caef2b29f8a507b91d4cbde7ea7babc0cc1a3" remote="githubglssh" />
-  <project path="vendor/rs" name="4.14-vendor_rs" revision="a14/gl" remote="githubgl" />
-  <project path="packages/apps/OpenCamera" name="packages-apps-OpenCamera" revision="main" clone-depth="1" remote="githubgl" />
+  <project path="vendor/oneplus/msm8998-common" name="roberto-sartori-gl/4.14-vendor_oneplus_msm8998-common" revision="ff0caef2b29f8a507b91d4cbde7ea7babc0cc1a3" remote="githubssh" />
+  <project path="vendor/rs" name="4.14-vendor_rs" revision="a14/gl" remote="github" />
+  <project path="packages/apps/OpenCamera" name="packages-apps-OpenCamera" revision="main" clone-depth="1" remote="github" />
 
     <!-- Prebuilt kernel repo -->
-  <project path="kernel/oneplus/prebuilt" name="4.14-kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="githubgl" />
+  <project path="kernel/oneplus/prebuilt" name="4.14-kernel-oneplus-prebuilt" revision="master" clone-depth="1" remote="github" />
 
   <!-- External -->
-  <project path="external/json-c" name="external_json-c" revision="lineage-21.0" remote="githubgl" />
-  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl"  revision="lineage-21.0" remote="githubgl" />
+  <project path="external/json-c" name="external_json-c" revision="lineage-21.0" remote="github" />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl"  revision="lineage-21.0" remote="github" />
 
   <!-- Beginning of added projects from Lineage or Qualcomm (CAF) -->
   <!-- Sepolicy -->
-  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-21.0" remote="githubgl" />
-  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="gl/lineage-21.0-legacy-um" remote="githubgl"  />
+  <project path="device/lineage/sepolicy" name="device_lineage_sepolicy" revision="gl/lineage-21.0" remote="github" />
+  <project path="device/qcom/sepolicy-legacy-um" name="4.14-device_qcom_sepolicy" revision="gl/lineage-21.0-legacy-um" remote="github"  />
 
   <!-- HAL from Lineage -->
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" revision="gl/lineage-20.0" remote="githubgl" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom_opensource_vibrator" revision="gl/lineage-20.0" remote="github" />
 
   <!-- Custom HAL from Sony/CAF -->
   <remove-project name="platform/hardware/qcom/media" />
-  <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="gl/aosp/LA.UM.8.2.1.r1" remote="githubgl" />
-  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-21.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="4-14-vendor-qcom-opensource-audio-hal-primary-hal" revision="msm8998_op/aosp/LA.UM.9.12.r1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="4.14-vendor-qcom-opensource-data-ipa-cfg-mgr" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="githubgl" />
-  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-21.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-21.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="aosp/LA.UM.8.1.r1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="githubgl" />
-  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-21.0" remote="githubgl" />
-  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="githubgl" />
-  <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="githubgl" />
+  <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="gl/aosp/LA.UM.8.2.1.r1" remote="github" />
+  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-21.0" remote="github" />
+  <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="4-14-vendor-qcom-opensource-audio-hal-primary-hal" revision="msm8998_op/aosp/LA.UM.9.12.r1" remote="github" />
+  <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="github" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="4.14-vendor-qcom-opensource-data-ipa-cfg-mgr" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="github" />
+  <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="github" />
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-21.0" remote="github" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-21.0" remote="github" />
+  <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="aosp/LA.UM.8.1.r1" remote="github" />
+  <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="github" />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-21.0" remote="github" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="github" />
+  <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="github" />
 
   <!-- Open Source projects -->
-  <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="githubgl" />
+  <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="github" />
 
   <!-- Google projects -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
 
   <!-- SimpleDeviceConfig -->
-  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" revision="12.1" remote="githubgl" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" revision="12.1" remote="github" />
 
   <!-- AOSP patches -->
-  <project path="aosp_patches" name="aosp_patches" revision="a14" remote="githubgl" />
+  <project path="aosp_patches" name="aosp_patches" revision="a14" remote="github" />
 </manifest>
