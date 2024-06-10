@@ -52,6 +52,18 @@ The OTA can be flashed from the recovery (using the 'ADB sideload' feature) or u
 
 To build for Dumpling, run the same commands with 'dumpling' instead of 'cheeseburger' in commands and paths.
 
+# Sign with custom keys
+
+By default, the keys used to sign system components are the AOSP keys.
+
+To use custom keys, just replace the keys in the vendor/rs/config/security directory.
+
+If the `ota_build.sh` script is used to generate the OTAs (as described above) the system will automatically be signed. OTA 'dirty' migrations are supported.
+
+If there is no need for OTA ('dirty') upgrade, there is no need to use the `ota_build.sh` script as the system is signed with the new keys anyway: the ota script makes sure that the migration from AOSP keys to the new keys is managed at first boot after the upgrade, but there is no need for a 'migration' is case of clean flash.
+
+Look at `vendor/rs/config/keys_migration.sh` and `vendor/rs/ota_build/ota_build.sh` (and related commits) for the details of the implementation.
+
 # Build the kernel
 The ROM sources include a prebuilt kernel. To build a kernel from sources and update it in the Android sources, follow these instructions.
 
@@ -110,13 +122,10 @@ The patches currently available:
 https://github.com/crdroidandroid/android_external_setupcompat/commit/0450c92cbe5c75cc31d4cdc0958918836b28ca53
 2) To fix issues with SIM 2:
 https://github.com/crdroidandroid/android_frameworks_opt_telephony/commit/cbded5de818d1d23ea8ac7a67f178a95da64a9f0
+https://review.lineageos.org/c/LineageOS/android_frameworks_opt_telephony/+/385445
 3) To enable the styles and colors selection under Settings -> Wallpaper & style:
 https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a72791347d9f39d85ff412e58f
-4) To fix a Dialer crash when opening Settings -> Display options:
-https://github.com/CarbonROM/android_packages_apps_Dialer/commit/e2b6a46f1f477d68e83210823fef1e4c85cddb3f
-5) Fix vowifi:
-- https://github.com/Corvus-Q/android_system_sepolicy/commit/87a78b7eaeb3adfe3131b1762123b07d3ccfb85b
-- Patch to fix netutils_wrapper access with BPF enabled
-6) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
+5) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
+6) A patch to support DSU (system/core).
 
 These patches are not necessary to boot or use Android.
