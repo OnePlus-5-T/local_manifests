@@ -22,15 +22,15 @@ $ repo sync -c --no-clone-bundle --no-tags
 then:
 ```
 $ source build/envsetup.sh
-$ lunch aosp_cheeseburger-ap1a-user
+$ lunch aosp_cheeseburger-ap2a-user
 $ make -j12
 ```
 the images will be available in `out/target/product/cheeseburger`.
 
 To build an OTA, from the Android sources root directory:
 ```
-$ bash vendor/rs/ota_build/ota_build.sh aosp_cheeseburger-ap1a-user
-$ bash vendor/rs/ota_build/ota_build.sh aosp_dumpling-ap1a-user
+$ bash vendor/rs/ota_build/ota_build.sh aosp_cheeseburger-ap2a-user
+$ bash vendor/rs/ota_build/ota_build.sh aosp_dumpling-ap2a-user
 ```
 and the OTA zip will be available in `out/target/product/<product>`.
 
