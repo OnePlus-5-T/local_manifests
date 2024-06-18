@@ -94,7 +94,7 @@ $ DEFCONFIG=msm8998_oneplus_android_defconfig
 $ cd ~/kernel_build/kernel_oneplus_msm8998
 $ git pull
 $ ${MAKE_PATH}/make O=out ARCH=arm64 CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 ${DEFCONFIG} -j8
-$ ${MAKE_PATH}/make O=out ARCH=arm64 CROSS_COMPILE_ARM32=${CC_ARM32_PATH}/arm-linux-androidkernel- CROSS_COMPILE=${CC_ARCH64_PATH}/aarch64-linux-androidkernel- CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 CLANG_TRIPLE=${CLANG_TRIPLE_BIN} -j6
+$ ${MAKE_PATH}/make O=out ARCH=arm64 CROSS_COMPILE_COMPAT=${CC_ARM32_PATH}/arm-linux-androidkernel- CROSS_COMPILE=${CC_ARCH64_PATH}/aarch64-linux-androidkernel- CC=${CLANG_BIN} LLVM=1 LLVM_IAS=1 CLANG_TRIPLE=${CLANG_TRIPLE_BIN} -j6
 ```
 
 Kernel headers can be generated with the following (after configuring the environment with the same variables used to build the kernel) (assuming that the Android build directory is `~/android_build_directory/`):
