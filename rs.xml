@@ -42,6 +42,7 @@
   <remove-project name="platform/hardware/qcom/media" />
   <project path="hardware/qcom/media" name="4-14-hardware-qcom-media" revision="gl/aosp/LA.UM.8.2.1.r1" remote="github" />
   <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" revision="lineage-21.0" remote="github" />
+  <project path="hardware/qcom-caf/common" name="4.14-android_hardware_qcom_caf_common" revision="lineage-21.0" remote="github" />
   <project path="vendor/qcom/opensource/audio-hal/primary-hal" name="4.14-android_hardware_qcom_audio" revision="gl/lineage-21.0-caf-msm8998" remote="github" />
   <project path="vendor/qcom/opensource/core-utils" name="4.14-vendor-qcom-opensource-core-utils" revision="aosp/LA.UM.8.1.r1" remote="github" />
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="4.14-vendor-qcom-opensource-data-ipa-cfg-mgr" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="github" />
