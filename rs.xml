@@ -56,7 +56,7 @@
   <project path="vendor/qcom/opensource/time-services" name="4.14-vendor-qcom-opensource-time-services" revision="aosp/LA.UM.9.12.r1" remote="github" />
 
   <!-- Open Source projects -->
-  <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="mms8998_op/s-mr1" remote="github" />
+  <project path="vendor/oss/timekeep" name="4.14-timekeep" revision="lineage-21" remote="github" />
 
   <!-- Google projects -->
   <project path="external/tinyxml" name="platform/external/tinyxml" groups="pdk" remote="aosp" revision="refs/tags/android-11.0.0_r46" />
