@@ -72,7 +72,7 @@ Download the sources and the cross compilers (needed only the first time):
 $ cd ~
 $ mkdir kernel_build
 $ cd kernel_build
-$ git clone --single-branch --branch 4.14.314/msm8998_oneplus https://github.com/OnePlus-5-T/4.14-kernel-oneplus-msm8998 kernel_oneplus_msm8998
+$ git clone --single-branch --branch 4.14.348/msm8998_oneplus https://github.com/OnePlus-5-T/4.14-kernel-oneplus-msm8998 kernel_oneplus_msm8998
 $ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/ prebuilt_aarch64
 $ git clone --depth 1 -b android12L-release --single-branch https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/ prebuilt_arm
 $ git clone --depth 1 -b android-13.0.0_r0.70 --single-branch https://android.googlesource.com/platform/prebuilts/clang/host/linux-x86 prebuilt_clang
