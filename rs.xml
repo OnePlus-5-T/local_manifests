@@ -70,7 +70,6 @@
   <project path="packages/apps/FossifyContacts" name="packages-apps-FossifyContacts" revision="master" remote="github" />
   <project path="packages/apps/FossifyGallery" name="packages-apps-FossifyGallery" revision="master" remote="github" />
   <project path="packages/apps/FossifyMessages" name="packages-apps-FossifyMessages" revision="master" remote="github" />
-  <project path="packages/apps/FossifyPhone" name="packages-apps-FossifyPhone" revision="master" remote="github" />
 
   <!-- AOSP patches -->
   <project path="aosp_patches" name="aosp_patches" revision="a14" remote="github" />
