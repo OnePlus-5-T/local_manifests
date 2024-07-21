@@ -127,6 +127,8 @@ https://review.lineageos.org/c/LineageOS/android_frameworks_opt_telephony/+/3854
 https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a72791347d9f39d85ff412e58f
 5) A patch to fix DAC/USB host device recognition when connected after boot (system/core).
 6) A patch to support DSU (system/core).
+7) A patch to fix a Dialer crash when opening Settings -> Display options:
+-https://github.com/CarbonROM/android_packages_apps_Dialer/commit/e2b6a46f1f477d68e83210823fef1e4c85cddb3f
 
 These patches are not necessary to boot or use Android.
 
