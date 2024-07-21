@@ -129,3 +129,9 @@ https://github.com/Flamingo-OS/packages_apps_Launcher3/commit/e6d6b64264ef45a727
 6) A patch to support DSU (system/core).
 
 These patches are not necessary to boot or use Android.
+
+There are two patches available from Google but not yet merged which are needed to build Android:
+1) https://android-review.googlesource.com/c/platform/prebuilts/sdk/+/3168781
+2) https://android-review.googlesource.com/c/platform/packages/modules/common/+/3174459
+
+These two patches should be merged soon by Google.
