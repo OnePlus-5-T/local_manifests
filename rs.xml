@@ -11,7 +11,7 @@
   <remote  name="githubmuppets"
            fetch="https://github.com/TheMuppets" />
 
-  <!-- Validated with AOSP revision: android-14.0.0_r55 -->
+  <!-- Validated with AOSP revision: android-15.0.0_r1 -->
   <!-- Added projects for Cheeseburger and Dumpling -->
   <project path="device/oneplus/cheeseburger" name="4.14-device_oneplus_cheeseburger" revision="gl/lineage-21" remote="github" />
   <project path="device/oneplus/dumpling" name="4.14-device_oneplus_dumpling" revision="gl/lineage-21" remote="github" />
@@ -49,7 +49,7 @@
   <project path="vendor/qcom/opensource/dataservices" name="4.14-vendor-qcom-opensource-dataservices" revision="msm8998_op/master" remote="github" />
   <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" revision="lineage-21.0" remote="github" />
   <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" revision="lineage-21.0" remote="github" />
-  <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="aosp/LA.UM.8.1.r1" remote="github" />
+  <project path="vendor/qcom/opensource/display-commonsys-intf" name="4.14-vendor-qcom-opensource-commonsys-intf-display" revision="gl/aosp/LA.UM.8.1.r1" remote="github" />
   <project path="vendor/qcom/opensource/display" name="4.14-vendor-qcom-opensource-display" revision="msm8998_op/aosp/LA.UM.8.1.r1" remote="github" />
   <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" revision="lineage-21.0" remote="github" />
   <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" revision="master" remote="github" />

@@ -15,22 +15,22 @@ Then, sync all the sources:
 ```
 $ repo init -u https://android.googlesource.com/platform/manifest -b <AOSP tag> --depth=1
 $ cd .repo
-$ git clone --branch a14/gl https://github.com/OnePlus-5-T/local_manifests.git local_manifests
+$ git clone --branch a15/gl https://github.com/OnePlus-5-T/local_manifests.git local_manifests
 $ cd ..
 $ repo sync -c --no-clone-bundle --no-tags
 ```
 then:
 ```
 $ source build/envsetup.sh
-$ lunch aosp_cheeseburger-ap2a-user
+$ lunch aosp_cheeseburger-ap3a-user
 $ make -j12
 ```
 the images will be available in `out/target/product/cheeseburger`.
 
 To build an OTA, from the Android sources root directory:
 ```
-$ bash vendor/rs/ota_build/ota_build.sh aosp_cheeseburger-ap2a-user
-$ bash vendor/rs/ota_build/ota_build.sh aosp_dumpling-ap2a-user
+$ bash vendor/rs/ota_build/ota_build.sh aosp_cheeseburger-ap3a-user
+$ bash vendor/rs/ota_build/ota_build.sh aosp_dumpling-ap3a-user
 ```
 and the OTA zip will be available in `out/target/product/<product>`.
 
