@@ -7,8 +7,6 @@
     <remove-project name="device/generic/mini-emulator-x86"/>
     <remove-project name="device/generic/mini-emulator-x86_64"/>
     <remove-project name="device/google/atv" />
-    <remove-project name="device/google/bramble" />
-    <remove-project name="device/google/bramble-sepolicy" />
     <remove-project name="device/google/contexthub" />
     <remove-project name="device/google/coral" />
     <remove-project name="device/google/coral-kernel" />
@@ -36,14 +34,4 @@
     <remove-project name="platform/hardware/qcom/data/ipacfg-mgr" />
     <remove-project name="platform/hardware/qcom/display" />
     <remove-project name="platform/hardware/qcom/gps" />
-    <remove-project name="kernel/prebuilts/4.19/arm64" />
-    <remove-project name="kernel/prebuilts/5.4/arm64" />
-    <remove-project name="kernel/prebuilts/5.4/x86-64" />
-    <remove-project name="kernel/prebuilts/mainline/arm64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/arm64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/4.19/x86-64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/arm64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/5.4/x86-64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/arm64" />
-    <remove-project name="kernel/prebuilts/common-modules/virtual-device/mainline/x86-64" />
 </manifest>
