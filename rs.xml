@@ -19,7 +19,7 @@
   <project path="vendor/oneplus/cheeseburger" name="proprietary_vendor_oneplus_cheeseburger" revision="070d217b2544fdec3773c82e1d537a366e1b1673" remote="githubmuppets" />
   <project path="vendor/oneplus/dumpling" name="proprietary_vendor_oneplus_dumpling" revision="645b844b9db46656b9ae8ef32318a78c2569a597" remote="githubmuppets" />
   <project path="vendor/oneplus/msm8998-common" name="OnePlus-5-T/4.14-vendor_oneplus_msm8998-common" revision="gl/lineage-21" remote="githubssh" />
-  <project path="vendor/rs" name="4.14-vendor_rs" revision="a14/gl" remote="github" />
+  <project path="vendor/rs" name="4.14-vendor_rs" revision="a15/gl" remote="github" />
   <project path="packages/apps/OpenCamera" name="packages-apps-OpenCamera" revision="main" clone-depth="1" remote="github" />
   <project path="packages/apps/SimpleKeyboard" name="packages-apps-simple-keyboard" revision="main" clone-depth="1" remote="github" />
 
